@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Jacob Portfolio</title>
+</head>
+<body class="bg-bgColor text-textColor">
+    
+    <!--HEADER-->
+    <header class=" fixed top-0 left-0 w-full px-24 py-5 flex items-center justify-between z-50">
+        <div class="text-2xl font-semibold">
+            <a href="#">Jacob.</a>
+        </div>
+
+        <div class="text-3xl md:hidden">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <nav class="text-lg font-medium flex gap-7">
+            <a class="hover:text-mainColor transition" href="#home">Home</a>
+            <a class="hover:text-mainColor transition" href="#about">About</a>
+            <a class="hover:text-mainColor transition" href="#education">Education</a>
+            <a class="hover:text-mainColor transition" href="#skils">Skills</a>
+            <a class="hover:text-mainColor transition" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--HOME SECTION-->
+    <section id="home" class="h-screen flex items-center px-24 bg-[url('../images/home.jpg')] bg-no-repeat bg-cover bg-center">
+        <div class="max-w-[40rem]">
+
+            <!--INTRODUCTION-->
+            <h1 class="font-bold text-6xl">Hi, I'm <span>Jacob Aiden</span></h1>
+            <div class="relative">
+                <h3 id="text-animate" class="font-bold text-4xl text-transparent mt-3">Frontend Developer</h3>
+            </div>
+            <p class="my-7">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, temporibus aliquid. Eos cumque eum tempore, adipisci est nostrum assumenda aliquid velit nam harum ad unde earum deleniti iusto numquam asperiores.
+            </p>
+
+            <!--BUTTONS-->
+            <section class="flex gap-14 font-semibold text-xl">
+
+                <div class="bg-mainColor border-2 border-mainColor overflow-hidden rounded-lg flex justify-center relative z-[1]">
+                    <button class="tracking-widest w-40 h-14 text-bgColor hover:text-mainColor transition duration-700 before:content-[''] before:absolute before:top-0 before:right-0 before:w-0 hover:before:w-full before:h-full before:z-[-1] before:transition-all before:duration-700 before:bg-bgColor">
+                        Hire Me
+                    </button>
+                </div>
+
+                <div class="bg-transparent border-2 border-mainColor overflow-hidden rounded-lg flex justify-center relative z-[1]">
+                    <button class="tracking-widest w-40 h-14 text-mainColor hover:text-bgColor transition duration-700 before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 hover:before:w-full before:h-full before:z-[-1] before:transition-all before:duration-700 before:bg-mainColor">
+                        Let's Talk
+                    </button>
+                </div>
+
+            </section>
+        </div>
+
+        <!--SOCIAL MEDIA-->
+        <section class="absolute bottom-20 flex gap-7">
+
+            <button class="z-[1] relative overflow-hidden text-mainColor border-2 border-mainColor rounded-full text-2xl">
+
+                <div class="before:z-[-1] w-14 h-14 before:absolute before:top-0 before:left-0 before:bg-mainColor before:w-0 hover:before:w-full before:h-full flex items-center justify-center hover:text-bgColor transition duration-700 before:transition-all before:duration-700">
+                    <i class='bx bxl-facebook' ></i>
+                </div>
+
+            </button>
+
+            <button class="z-[1] relative overflow-hidden text-mainColor border-2 border-mainColor rounded-full text-2xl">
+
+                <div class="before:z-[-1] w-14 h-14 before:absolute before:top-0 before:left-0 before:bg-mainColor before:w-0 hover:before:w-full before:h-full flex items-center justify-center hover:text-bgColor transition duration-700 before:transition-all before:duration-700">
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+
+            </button>
+
+            <button class="z-[1] relative overflow-hidden text-mainColor border-2 border-mainColor rounded-full text-2xl">
+
+                <div class="before:z-[-1] w-14 h-14 before:absolute before:top-0 before:left-0 before:bg-mainColor before:w-0 hover:before:w-full before:h-full flex items-center justify-center hover:text-bgColor transition duration-700 before:transition-all before:duration-700">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+
+            </button>
+
+        </section>
+
+        <div class=" hover:bg-bgColor/60 transition-all duration-1000 w-2/5 h-screen absolute right-0"></div>
+    </section>
+
+</body>
+</html>
