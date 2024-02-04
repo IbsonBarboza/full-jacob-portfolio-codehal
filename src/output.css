@@ -633,6 +633,21 @@ html {
   margin-bottom: auto;
 }
 
+.my-9{
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.my-96{
+  margin-top: 24rem;
+  margin-bottom: 24rem;
+}
+
+.my-48{
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -1055,6 +1070,10 @@ html {
 
 .pt-48{
   padding-top: 12rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
 }
 
 .text-center{
