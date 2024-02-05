@@ -23,4 +23,12 @@
     header.sticky {
         @apply bg-bgColor
     }
+
+    #navBar.active {
+        left: 0;
+    }
+
+    #navBar.active span {
+        left: 0;
+    }
 }

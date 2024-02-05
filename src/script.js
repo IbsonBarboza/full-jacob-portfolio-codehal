@@ -1,3 +1,12 @@
+const menuIcon = document.querySelector('#menuIcon')
+const navBar = document.querySelector('#navBar')
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x')
+    navBar.classList.toggle('active')
+}
+
+
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('header nav a');
 
