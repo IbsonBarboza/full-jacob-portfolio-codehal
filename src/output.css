@@ -1352,6 +1352,10 @@ header.sticky{
     background-image: url('../images/home.jpg');
   }
 
+  .md\:p-0{
+    padding: 0px;
+  }
+
   .md\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
