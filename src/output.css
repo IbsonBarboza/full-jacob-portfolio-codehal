@@ -1096,6 +1096,13 @@ header.sticky{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+@media (min-width: 768px){
+  header.md\:sticky{
+    --tw-bg-opacity: 1;
+    background-color: rgb(8 27 41 / var(--tw-bg-opacity));
+  }
+}
+
 .placeholder\:text-textColor::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(237 237 237 / var(--tw-text-opacity));
@@ -1245,8 +1252,48 @@ header.sticky{
 }
 
 @media (min-width: 768px){
+  .md\:static{
+    position: static;
+  }
+
+  .md\:fixed{
+    position: fixed;
+  }
+
+  .md\:absolute{
+    position: absolute;
+  }
+
+  .md\:relative{
+    position: relative;
+  }
+
+  .md\:sticky{
+    position: sticky;
+  }
+
   .md\:bottom-20{
     bottom: 5rem;
+  }
+
+  .md\:left-0{
+    left: 0px;
+  }
+
+  .md\:top-0{
+    top: 0px;
+  }
+
+  .md\:-left-10{
+    left: -2.5rem;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
+  .md\:block{
+    display: block;
   }
 
   .md\:flex{
@@ -1281,8 +1328,24 @@ header.sticky{
     flex-direction: row;
   }
 
+  .md\:items-center{
+    align-items: center;
+  }
+
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+
+  .md\:bg-transparent{
+    background-color: transparent;
   }
 
   .md\:bg-\[url\(\'\.\.\/images\/home\.jpg\'\)\]{
@@ -1300,5 +1363,11 @@ header.sticky{
 
   .md\:indent-5{
     text-indent: 1.25rem;
+  }
+
+  .md\:shadow-none{
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
