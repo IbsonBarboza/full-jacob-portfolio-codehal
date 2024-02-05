@@ -7,6 +7,7 @@
 @layer base {
     html {
         font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
     }
 
     #text-animate {
@@ -17,5 +18,9 @@
     #contact form .box .field input:focus~.focus,
     #contact form .box .field input:valid~.focus {
         width: 100%;
+    }
+
+    header.sticky {
+        @apply bg-bgColor
     }
 }
