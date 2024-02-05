@@ -12,4 +12,10 @@
     #text-animate {
         -webkit-text-stroke: .7px #00abf0;
     }
+
+    #contact form textarea:focus~.focus,
+    #contact form .box .field input:focus~.focus,
+    #contact form .box .field input:valid~.focus {
+        width: 100%;
+    }
 }

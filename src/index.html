@@ -403,8 +403,62 @@
         </div>
     </section>
 
-    <section id="contact" class="h-screen">
+    <section id="contact" class="h-screen flex flex-col justify-center items-center px-24">
+        <div class="flex justify-center mb-10 mt:24">
+            <h2 class="text-5xl font-bold">
+                Contact <span class="text-mainColor">Me!</span>
+            </h2>
+        </div>
 
+        <form action="" class="w-[700px]">
+
+            <!--BOX-->
+            <div class="box flex gap-5">
+
+                <!--FIELD-->
+                <div class="field bg-transparent border-2 border-mainColor text-textColor rounded-lg overflow-hidden w-full h-14 mb-3 relative z-10">
+                    <input class="indent-5 h-full w-full bg-transparent placeholder:text-textColor" type="text" placeholder="Full Name" required>
+                    <span class="focus absolute top-0 left-0 w-0 h-full transition-all duration-700 bg-bgSecondColor -z-10"></span>
+                </div>
+
+                <!--FIELD-->
+                <div class="field bg-transparent border-2 border-mainColor text-textColor rounded-lg overflow-hidden w-full h-14 mb-3 relative z-10">
+                    <input class="indent-5 h-full w-full bg-transparent placeholder:text-textColor" type="email" placeholder="Email Address" required>
+                    <span class="focus absolute top-0 left-0 w-0 h-full transition-all duration-700 bg-bgSecondColor -z-10"></span>
+                </div>
+            </div>
+
+            <!--BOX-->
+            <div class="box flex gap-5">
+
+                <!--FIELD-->
+                <div class="field bg-transparent border-2 border-mainColor text-textColor rounded-lg overflow-hidden w-full h-14 relative z-10">
+                    <input class="indent-5 h-full w-full bg-transparent placeholder:text-textColor" type="number" placeholder="Mobile Number" required>
+                    <span class="focus absolute top-0 left-0 w-0 h-full transition-all duration-700 bg-bgSecondColor -z-10"></span>
+                </div>
+
+                <!--FIELD-->
+                <div class="field bg-transparent border-2 border-mainColor text-textColor rounded-lg overflow-hidden w-full h-14 relative z-10">
+                    <input class="indent-5 h-full w-full bg-transparent placeholder:text-textColor" type="text" placeholder="Email Subject" required>
+                    <span class="focus absolute top-0 left-0 w-0 h-full transition-all duration-700 bg-bgSecondColor -z-10"></span>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+
+                <!--TEXT AREA-->
+                <div class="bg-transparent border-2 border-mainColor text-textColor rounded-lg overflow-hidden w-full mt-3 mb-5 relative z-10">
+                    <textarea class="px-5 py-3 h-full w-full bg-transparent placeholder:text-textColor resize-none outline-0" name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <span class="focus absolute top-0 left-0 w-0 h-full transition-all duration-700 bg-bgSecondColor -z-10"></span>
+                </div>
+
+                <!--Buttons-->
+                <div class="bg-mainColor border-2 border-mainColor overflow-hidden rounded-lg flex justify-center relative z-[1] w-40 h-14">
+                    <button type="submit" class="tracking-widest w-40 h-14 font-semibold text-lg text-bgColor hover:text-mainColor transition duration-700 before:content-[''] before:absolute before:top-0 before:right-0 before:w-0 hover:before:w-full before:h-full before:z-[-1] before:transition-all before:duration-700 before:bg-bgColor">
+                        Submit
+                    </button>
+            </div>
+        </form>
     </section>
 </body>
 </html>
