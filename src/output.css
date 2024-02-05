@@ -685,6 +685,10 @@ header.sticky{
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-14{
   height: 3.5rem;
 }
@@ -703,6 +707,10 @@ header.sticky{
 
 .h-screen{
   height: 100vh;
+}
+
+.min-h-screen{
+  min-height: 100vh;
 }
 
 .w-0{
@@ -769,6 +777,10 @@ header.sticky{
   width: 100%;
 }
 
+.min-w-full{
+  min-width: 100%;
+}
+
 .max-w-\[40rem\]{
   max-width: 40rem;
 }
@@ -797,10 +809,6 @@ header.sticky{
 
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .gap-14{
@@ -1207,7 +1215,15 @@ header.sticky{
 }
 
 @media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:hidden{
     display: none;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 }

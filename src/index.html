@@ -9,7 +9,7 @@
 
     <title>Jacob Portfolio</title>
 </head>
-<body class="bg-bgColor text-textColor scr">
+<body class="bg-bgColor text-textColor">
     
     <!--HEADER-->
     <header class="transition duration-500 fixed top-0 left-0 w-full px-24 py-5 flex items-center justify-between z-50">
@@ -21,7 +21,7 @@
             <i class='bx bx-menu'></i>
         </div>
 
-        <nav class="text-lg font-medium flex gap-7">
+        <nav class="hidden md:flex text-lg font-medium gap-7">
             <a class="active hover:text-mainColor transition" href="#home">Home</a>
             <a class="hover:text-mainColor transition" href="#about">About</a>
             <a class="hover:text-mainColor transition" href="#education">Education</a>
@@ -94,7 +94,7 @@
     </section>
 
     <!--ABOUT SECTION-->
-    <section id="about" class="h-screen bg-bgSecondColor px-24 flex flex-col items-center justify-center gap-6 py-32">
+    <section id="about" class="min-h-screen bg-bgSecondColor px-24 flex flex-col items-center justify-center gap-6 py-32">
         <h2 class="text-5xl font-bold">
             About <span class="text-mainColor">Me</span>
         </h2>
@@ -119,15 +119,15 @@
     </section>
 
     <!--EDUCATION SECTION-->
-    <section id="education" class="h-screen flex flex-col justify-center px-24 my-32">
+    <section id="education" class="min-h-screen flex flex-col justify-center px-24 my-32">
         <div class="flex justify-center mt:24">
             <h2 class="text-5xl font-bold">
                 My <span class="text-mainColor">Journey</span>
             </h2>
         </div>
         
-        <div class="flex gap-10 mb-[-7%]">
-            <div class="scale-[80%]">
+        <div class="flex flex-col md:flex-row  mb-[-7%]">
+            <div class="scale-[80%] ">
                 <h3 class="font-bold text-3xl mb-5 indent-10">Education</h3>
 
                 <!--BOX-->
@@ -259,7 +259,7 @@
     </section>
 
     <!--SKILLS SECTION-->
-    <section id="skills" class="h-screen bg-bgSecondColor w-full flex flex-col justify-center px-24 py-32">
+    <section id="skills" class="min-h-screen bg-bgSecondColor w-full flex flex-col justify-center px-24 py-32">
         <div class="flex justify-center mb-10 mt:24">
             <h2 class="text-5xl font-bold">
                 My <span class="text-mainColor">Skills</span>
@@ -403,7 +403,8 @@
         </div>
     </section>
 
-    <section id="contact" class="h-screen flex flex-col justify-center items-center px-24">
+    <!--CONTACT SECTION-->
+    <section id="contact" class="min-h-screen flex flex-col justify-center items-center px-24">
         <div class="flex justify-center mb-10 mt:24">
             <h2 class="text-5xl font-bold">
                 Contact <span class="text-mainColor">Me!</span>
